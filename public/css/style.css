@@ -18,6 +18,8 @@ body {
 	background-image: url('../images/black-marble-texture2-1024x576.jpg');
 }
 
+
+
 header {
 	display: flex;
 	justify-content: center;
@@ -69,6 +71,18 @@ main {
 }
 
 .box {
+	margin: 50px;
+	padding: 30px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	box-shadow: 5px 5px 5px 5px #BBBBBB;
+
+	display: flex;
+	justify-content: center;
+	/* 水平方向の中央揃え */
+}
+
+.box_out {
 	margin: 50px;
 	padding: 30px;
 	border-radius: 10px;
@@ -182,4 +196,26 @@ footer {
 	padding: 1%;
 	color: white;
 	font-family: "Caslon", "Times New Roman", serif;
+}
+
+/* 画面幅が600px以下の場合のスタイル */
+@media (max-width: 1600px) {
+	.box_hide {
+		display: block;
+		justify-content: center;
+		background-color: white;
+		border-radius: 10px;
+		margin: 50px;
+		padding: 30px;
+
+	}
+
+	.box_out {
+		display: block;
+		justify-content: center;
+	}
+
+	.inbox_content {
+		width: auto;
+	}
 }
